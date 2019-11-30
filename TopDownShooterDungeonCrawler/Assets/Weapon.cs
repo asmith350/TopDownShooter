@@ -74,7 +74,8 @@ public class Weapon : MonoBehaviour {
             direction.Normalize();
             Quaternion rotation = Quaternion.Euler(0, 0, Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg + 90f);
 
-            GameObject projectile = Instantiate(bulletPrefab, firePoint[i].position, rotation);
+            GameObject projectile = Instantiate(bulletPrefab, firePoint[i].position, transform.rotation);
+            
             projectile.GetComponent<Rigidbody2D>().velocity = direction * projectile.GetComponent<Projectile>().getBulletSpeed();
             curAmmo--;
 
