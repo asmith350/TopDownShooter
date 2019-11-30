@@ -148,8 +148,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9b29ae207632eb54286dd03813665d1a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  startTimeBtwSpawns: 0.05
-  destroyTimeLimit: 0.15
+  startTimeBtwSpawns: 0.1
+  destroyTimeLimit: 0.45
   echoObjs:
   - {fileID: 1316453793891762, guid: c36b0872f6ad1c8458cf9851a5f89229, type: 2}
 --- !u!212 &212356998616029938
